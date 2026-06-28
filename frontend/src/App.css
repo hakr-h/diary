@@ -1,0 +1,103 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  padding: 1rem;
+}
+
+.app { max-width: 720px; margin: 0 auto; }
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 1.5rem;
+}
+
+.app-header h1 { font-size: 1.8rem; }
+
+/* Buttons */
+button {
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 0.9rem;
+}
+.btn-primary { background: #2563eb; color: #fff; border-color: #2563eb; }
+.btn-primary:hover { background: #1d4ed8; }
+.btn-danger { border-color: #dc2626; color: #dc2626; }
+.btn-danger:hover { background: #dc2626; color: #fff; }
+
+/* Error */
+.error-banner {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Form */
+.entry-form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.entry-form h2 { font-size: 1.2rem; }
+
+.entry-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.entry-form input,
+.entry-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.mood-selector { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.mood-btn { padding: 0.4rem 0.8rem; font-size: 1rem; }
+.mood-btn.selected { background: #2563eb; color: #fff; border-color: #2563eb; }
+
+.form-actions { display: flex; gap: 0.5rem; }
+
+/* Entry list */
+.entry-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+
+.entry-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.entry-header { display: flex; justify-content: space-between; font-size: 0.85rem; color: #666; }
+.entry-title { font-size: 1.1rem; }
+.entry-content { line-height: 1.6; color: #444; }
+.entry-actions { display: flex; gap: 0.5rem; margin-top: 0.25rem; }
+
+.empty-state { color: #888; text-align: center; margin-top: 3rem; }
